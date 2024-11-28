@@ -7,6 +7,7 @@ ADD index.js .
 ADD build .
 COPY . .
 RUN npm install
+RUN npm i express
 
 EXPOSE 8080
 
