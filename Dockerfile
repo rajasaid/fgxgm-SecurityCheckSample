@@ -1,13 +1,13 @@
 FROM node:18.20.5
 
-RUN npm install -g npm@9.1.3
+RUN npm install -g npm@10.9.1
 
 ADD package.json .
 ADD index.js .
 ADD build .
 COPY . .
 RUN npm install
-RUN npm i express
+
 
 EXPOSE 8080
 
